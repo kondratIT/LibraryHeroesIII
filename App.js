@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View,ImageBackground } from 'react-native';
 
 import { ListOfCreatures } from "./Components/ListOfCreatures/ListOfCreatures"
-import {StatisticView} from  "./Components/StatisticView/StatisticView"
+import {StaticticListView} from "./Components/StaticticListView/StaticticListView"
 
 export default function App() {
   return (
@@ -16,7 +16,7 @@ export default function App() {
         <ListOfCreatures/>
         <StatusBar style="auto" />
       </View>
-      <StatisticView image={require('./Images/Interface/att.jpg')} name="Atak" value="3(14)" />
+      <StaticticListView/>
     </ImageBackground>
   );
 }
@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingTop: 60,
     color:'#ffffff'
-    //backgroundColor: '#fff',
   },
   tlo: {
     flex: 1,
