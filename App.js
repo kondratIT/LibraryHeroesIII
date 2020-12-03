@@ -3,12 +3,13 @@ import React from 'react';
 import { StyleSheet, Text, View,ImageBackground } from 'react-native';
 
 import { ListOfCreatures } from "./Components/ListOfCreatures/ListOfCreatures"
-import {StaticticListView} from "./Components/StaticticListView/StaticticListView"
+import {statistics} from "./Data/Statistics"
 
 export default function App() {
+  let stats = statistics;
   return (
     <ImageBackground
-      source={require('./Background.bmp')}
+      source={require('./Images/Interface/BlueBackground.bmp')}
       resizeMode="cover"
        style={styles.tlo}>
       <View style={styles.container}>
@@ -16,7 +17,6 @@ export default function App() {
         <ListOfCreatures/>
         <StatusBar style="auto" />
       </View>
-      <StaticticListView/>
     </ImageBackground>
   );
 }
