@@ -12,9 +12,12 @@ export class StaticticListView extends Component {
             statistics: statistics
         };
     };
-    _renderStatistic = ({item}) => {
+    _renderStatistic = ({ item }) => {
         return (
-            <StatisticView image={item.image} name={item.name} value="78845" />
+            <StatisticView
+                image={item.image}
+                name={item.name}
+                value={this.props.stats.defence} />
         );
     };
 

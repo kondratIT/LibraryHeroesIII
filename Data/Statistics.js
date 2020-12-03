@@ -3,12 +3,12 @@ export const statistics = [
     {
         key: "attack",
         name: "Atak",
-        image: require('../Images/Interface/att.jpg'),
+        image: require('../Images/Interface/attack.png'),
     },
     {
         key: "deffence",
         name: "Obrona",
-        image: require('../Images/Interface/def.jpg'),
+        image: require('../Images/Interface/deffeence.png'),
     },
     {
         key: "shots",
@@ -38,22 +38,22 @@ export const statistics = [
     {
         key: "growth",
         name: "Przyrost",
-        image: require('../Images/Interface/growth.jpg'),
+        image: require('../Images/Interface/growth.png'),
     },
-    {
-        key: "heroesWithSpeciality",
-        name: "Bohater",
-        image: require('../Images/Interface/heroes.jpg'),
-    },
+    // {
+    //     key: "heroesWithSpeciality",
+    //     name: "Bohater",
+    //     image: require('../Images/Interface/heroes.jpg'),
+    // },
     {
         key: "aiValue",
         name: "Wartość AI",
         image: require('../Images/Interface/emptySmall.jpg'),
     },
-    {
-        key: "lvl",
-        name: "Poziom",
-        image: require('../Images/Interface/emptySmall.jpg'),
-    },
+    // {
+    //     key: "lvl",
+    //     name: "Poziom",
+    //     // image: require('../Images/Interface/emptySmall.jpg'),
+    // },
 
 ];
