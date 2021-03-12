@@ -38,5 +38,4 @@ const styles = StyleSheet.create({
     value: {
         flex: 2,
     },
-
 });

@@ -19,6 +19,7 @@ export class ListOfCreatures extends Component{
                 level={item.level}
                 statistics={item.statistics}
                 heroesWithSpeciality= {item.heroesWithSpeciality}
+                secondHeroesWithSpeciality= {item.secondHeroesWithSpeciality}
             />
         );
     };

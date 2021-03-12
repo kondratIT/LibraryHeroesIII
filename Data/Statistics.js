@@ -21,7 +21,7 @@ export const statistics = [
         image: require('../Images/Interface/dmg.jpg'),
     },
     {
-        key: "hp",
+        key: "health",
         name: "Wytrzymałość",
         image: require('../Images/Interface/hp.jpg'),
     },
@@ -46,7 +46,7 @@ export const statistics = [
     //     image: require('../Images/Interface/heroes.jpg'),
     // },
     {
-        key: "aiValue",
+        key: "value",
         name: "Wartość AI",
         image: require('../Images/Interface/emptySmall.jpg'),
     },

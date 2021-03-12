@@ -7,7 +7,6 @@ export class TextWithStyled extends Component{
         if (this.props.type === "gold") type = styles.gold;
         if (this.props.type === "empty") {
             type = styles.empty;
-
         };
         return (
             <View style={this.props.style}>

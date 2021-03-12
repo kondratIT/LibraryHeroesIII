@@ -3,10 +3,8 @@ import React from 'react';
 import { StyleSheet, Text, View,ImageBackground } from 'react-native';
 
 import { ListOfCreatures } from "./Components/ListOfCreatures/ListOfCreatures"
-import {statistics} from "./Data/Statistics"
 
 export default function App() {
-  let stats = statistics;
   return (
     <ImageBackground
       source={require('./Images/Interface/BlueBackground.bmp')}
@@ -26,7 +24,8 @@ const styles = StyleSheet.create({
     flex:1,
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 60,
+    paddingTop: 75,
+    paddingBottom:15,
     color:'#ffffff'
   },
   tlo: {

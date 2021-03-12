@@ -3,8 +3,12 @@ import {StyleSheet, Text, Image,ImageBackground, View} from "react-native";
 import { StaticticListView } from "../StaticticListView/StaticticListView";
 import {TextWithStyled} from "../TextWithStyled/TextWithStyled";
 
+
+
 export class CreaturesView extends Component{
     render() {
+        let heroesWithSpecialityStyle = styles.hero;
+        if (this.props.secondHeroesWithSpeciality !== null) heroesWithSpecialityStyle = styles.heroeses;
         return (
             <ImageBackground
             source={require('../../Images/Interface/BackgroundSmall.bmp')}
@@ -23,9 +27,12 @@ export class CreaturesView extends Component{
                                 <TextWithStyled type="empty" style={styles.text}> Poziom </TextWithStyled>
                                 <TextWithStyled> {this.props.level} </TextWithStyled>
                             </View>
-                            <View style={styles.hero}>
+                            <View style={heroesWithSpecialityStyle}>
                                 <Image
                                     source={this.props.heroesWithSpeciality}
+                                />
+                                 <Image
+                                    source={this.props.secondHeroesWithSpeciality}
                                 />
                             </View>
                         </View>
@@ -60,8 +67,13 @@ const styles = StyleSheet.create({
         width: 100,
     },
     hero: {
-        alignSelf: "center",
-        marginTop:1,
+        alignSelf:  'center',
+        marginTop: 1,
+    },
+    heroeses: {
+        flexDirection: "row",
+        justifyContent:'space-around',
+        marginTop: 1,
     },
     text: {
         flex:1,
